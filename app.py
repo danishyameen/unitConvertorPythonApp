@@ -92,13 +92,13 @@ def convert_volume(value, from_unit, to_unit):
 
 # Streamlit app
 def main():
-    st.set_page_config(page_title="Unit Converter", page_icon="📐", layout="centered")
+    st.set_page_config(page_title="Giaic Unit Converter", page_icon="📐", layout="centered")
     st.title("🌟 Giaic Unit Converter 🌟")
     st.markdown("Welcome to the **Giaic Unit Converter**! 🚀 Convert between different units with ease. 🎉")
     
     # Sidebar for unit type selection
     st.sidebar.header("🌟 Giaic Unit Converter 🌟")
-    st.sidebar.header("⚙️ **Settings & Options** ⚙️")
+    st.sidebar.subheader("⚙️ **Settings & Options** ⚙️")
     unit_type = st.sidebar.selectbox("**Select Unit Type**", ["Length 📏", "Weight ⚖️", "Temperature 🌡️", "Volume 🥤"])
     
     st.sidebar.markdown("---")
