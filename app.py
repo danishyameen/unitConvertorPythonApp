@@ -97,25 +97,28 @@ def main():
     st.markdown("Welcome to the **Giaic Unit Converter**! 🚀 Convert between different units with ease. 🎉")
     
     # Sidebar for unit type selection
-    st.sidebar.header("🌟 Giaic Unit Converter 🌟")
-    st.sidebar.subheader("⚙️ **Settings & Options** ⚙️")
-    unit_type = st.sidebar.selectbox("**Select Unit Type**", ["Length 📏", "Weight ⚖️", "Temperature 🌡️", "Volume 🥤"])
     
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### 🛠️ **Tools & Features**")
-    st.sidebar.markdown("- **Easy Conversion**: Convert between multiple units effortlessly. 🎯")
-    st.sidebar.markdown("- **Real-Time Results**: Get instant results with animations. ⚡")
-    st.sidebar.markdown("- **User-Friendly**: Simple and intuitive interface. 😊")
+    with st.sidebar:
+        st.header("🌟 Giaic Unit Converter 🌟")
+        st.subheader("⚙️ **Settings & Options** ⚙️")
+        unit_type = st.sidebar.selectbox("**Select Unit Type**", ["Length 📏", "Weight ⚖️", "Temperature 🌡️", "Volume 🥤"])
     
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### 📌 **Tips & Tricks**")
-    st.sidebar.markdown("- Use the dropdown menus to select units. 🖱️")
-    st.sidebar.markdown("- Enter the value you want to convert. 🔢")
-    st.sidebar.markdown("- Click **Convert** to see the magic! ✨")
+        st.markdown("---")
+        st.markdown("- **Easy Conversion**: Convert between multiple units effortlessly. 🎯")
+        st.markdown("### 🛠️ **Tools & Features**")
+        st.markdown("- **Real-Time Results**: Get instant results with animations. ⚡")
+        st.markdown("- **User-Friendly**: Simple and intuitive interface. 😊")
     
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### 🚀 **About This App**")
-    st.sidebar.markdown("This app is designed to help you convert between different units quickly and easily. Whether you're a student, engineer, or just curious, this tool is for you! 🎓")
+        st.markdown("### 📌 **Tips & Tricks**")
+        st.markdown("---")
+        st.markdown("- Use the dropdown menus to select units. 🖱️")
+        st.markdown("- Enter the value you want to convert. 🔢")
+        st.markdown("- Click **Convert** to see the magic! ✨")
+        
+        st.markdown("---")
+        st.markdown("### 🚀 **About This App**")
+        st.markdown("This app is designed to help you convert between different units quickly and easily. Whether you're a student, engineer, or just curious, this tool is for you! 🎓")
+    
     
     if unit_type == "Length 📏":
         st.header("📏 Length Converter")
